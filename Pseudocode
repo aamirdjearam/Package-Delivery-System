@@ -1,0 +1,87 @@
+Section A) Creating the Hash Table
+
+#Initialize the hash table with 40 buckets and create a list in each bucket
+class HashTable:
+    def init (self, capacity = 40)
+
+        #Create empty list in every bucket
+
+        for list in capacity (capacity)
+        self.append empty table []
+
+    #Other functions for the Hash Table
+    def lookup
+    def insert
+    def remove
+
+Section B) Creating Package and Truck Classes
+
+    #The truck class receives id, time and a package list as parameters
+    class Truck:
+
+    self.currentLocation = Address of Hub
+    self.id = id of the truck (given parameter)
+    self.mileage = 0 (initialize at 0)
+    self.time = time to depart (given parameter)
+    self.packages = list of packages (given parameter)
+
+    #Update all packages in the package list to "En Route"
+
+    for status in package list:
+        lookup package using package ID
+        status = "en route"
+
+    #The Package Class receives id, address, city, state, zip, deliveryTime, size, notes, start_time and end_time as parameters
+    class Package:
+
+    self.id = id of the package
+    self.status = the status of the package
+    self.truck = the truck the package is on
+
+
+
+Section C) Loading Packages into the Hash Table
+
+  #Create a package item and insert it into the hash table using the insert function
+  newPackage = Package(Enter Parameters here)
+  hashtable.insert(ID of newPackage, Package)
+
+Section D) The Nearest Neighbor Algorithm
+#Initialize variables
+
+currentAddress = current_location_of_truck
+closestDelivery = higher number than max in distance CSV
+newLocation = empty (initializing variable)
+packageToDeliver = empty (initializing variable)
+
+#Go through packages until the one with the closest location is found by comparing
+distances between the location and the current location of the truck
+
+for packages in remainingPackagesInTheTruck
+    package = getPackageFromHashTable(search packageID) [O(N) Time Complexity]
+    address_of_package = address from package in hash table
+    distance_between = distance between the truck's current location and the package destination
+
+    if (distance_between < closestDelivery)
+    closest_delivery = distance between the truck's current location and the package destination
+    newLocation = address of the package
+    packageToDeliver = ID of the pacakge
+
+ return closest_delivery, newLocation, package to deliver
+
+Section E) Loading Packages into the Truck
+
+  #Packages will be manually loaded onto the truck
+
+   Truck1 = Truck(ID = 1, Time = 08:00:00, packageList = [13, 14, 15, 19 ,21]
+
+Section F) Delivering Packages in the truck
+
+while (Packages on truck remain):
+    nextAddress = nearest neighbor Algorithm
+    deliver nextAddress
+    add mileage and time to running total
+
+
+
+
